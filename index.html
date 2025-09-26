@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Alerta | Ciencia Ciudadana y Salud Mental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #f8f9fa;
+        }
+        .brand-red {
+            color: #d92525;
+        }
+        .brand-red-bg {
+            background-color: #d92525;
+        }
+        .brand-red-bg:hover {
+            background-color: #b52020;
+        }
+        .brand-gray-dark {
+            color: #343a40;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://storage.googleapis.com/maker-me/uploads/1727372866946/Gemini_Generated_Image_k1beerk1beerk1be.jpg" alt="Logo Red Alerta" class="h-10 w-auto">
+                <span class="text-2xl font-bold brand-gray-dark">Red Alerta</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" class="text-gray-600 hover:brand-red transition duration-300">Inicio</a>
+                <a href="#proyecto" class="text-gray-600 hover:brand-red transition duration-300">Sobre el Proyecto</a>
+                <a href="#participa" class="text-gray-600 hover:brand-red transition duration-300">Participa</a>
+                <a href="#contacto" class="text-gray-600 hover:brand-red transition duration-300">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <a href="#inicio" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Inicio</a>
+            <a href="#proyecto" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Sobre el Proyecto</a>
+            <a href="#participa" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Participa</a>
+            <a href="#contacto" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-bg">
+            <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold brand-gray-dark leading-tight mb-4">Observando juntos nuestra salud mental.</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Únete a Red Alerta, un proyecto de ciencia ciudadana para mapear y entender el bienestar emocional de nuestra comunidad.</p>
+                <a href="#participa" class="brand-red-bg text-white font-bold py-3 px-8 rounded-lg text-lg hover:shadow-lg transition duration-300 inline-block">Conviértete en un centinela</a>
+            </div>
+        </section>
+
+        <!-- About the Project Section -->
+        <section id="proyecto" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold brand-gray-dark">¿Qué es Red Alerta?</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Una iniciativa comunitaria para visibilizar la salud mental a través de la ciencia.</p>
+                </div>
+                <div class="flex flex-wrap items-center -mx-4">
+                    <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop" alt="Personas colaborando" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="w-full md:w-1/2 px-4">
+                        <h3 class="text-2xl font-semibold brand-gray-dark mb-4">Ciencia ciudadana para el bienestar común</h3>
+                        <p class="text-gray-700 mb-4">
+                            Red Alerta es una plataforma que te permite reportar de forma anónima y segura tus percepciones sobre la salud mental en tu entorno. Al compartir tus observaciones, contribuyes a crear un mapa en tiempo real del estado de ánimo de la comunidad.
+                        </p>
+                        <p class="text-gray-700">
+                            Estos datos, completamente anónimos, son analizados por investigadores para identificar patrones, detectar áreas de necesidad y proponer estrategias de apoyo que beneficien a todos. Tu participación es clave.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Participate Section -->
+        <section id="participa" class="bg-gray-50 py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold brand-gray-dark">Participar es muy sencillo</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">En solo tres pasos puedes hacer una gran diferencia.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full brand-red-bg text-white text-2xl font-bold mx-auto mb-6">1</div>
+                        <h3 class="text-xl font-semibold mb-2 brand-gray-dark">Regístrate</h3>
+                        <p class="text-gray-600">Crea tu cuenta de forma rápida y segura. Tu anonimato está garantizado.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full brand-red-bg text-white text-2xl font-bold mx-auto mb-6">2</div>
+                        <h3 class="text-xl font-semibold mb-2 brand-gray-dark">Reporta</h3>
+                        <p class="text-gray-600">Comparte tus observaciones a través de encuestas breves y sencillas desde tu móvil u ordenador.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                         <div class="flex items-center justify-center h-16 w-16 rounded-full brand-red-bg text-white text-2xl font-bold mx-auto mb-6">3</div>
+                        <h3 class="text-xl font-semibold mb-2 brand-gray-dark">Analiza y Comparte</h3>
+                        <p class="text-gray-600">Explora los datos en nuestro mapa interactivo y comparte los resultados para generar conciencia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold brand-gray-dark">¿Tienes preguntas?</h2>
+                <p class="text-gray-600 mt-4 max-w-xl mx-auto mb-8">Estamos aquí para ayudarte. Ponte en contacto con nuestro equipo para obtener más información sobre el proyecto.</p>
+                <a href="mailto:info@redalerta.org" class="border-2 border-red-500 brand-red font-bold py-3 px-8 rounded-lg text-lg hover:brand-red-bg hover:text-white transition duration-300">Contáctanos</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="font-semibold text-lg">Red Alerta</p>
+                    <p class="text-sm text-gray-400">&copy; 2024. Todos los derechos reservados.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm-1.161 4.708a4.147 4.147 0 11-5.864 5.864 4.147 4.147 0 015.864-5.864zM12 15.366a3.366 3.366 0 100-6.733 3.366 3.366 0 000 6.733zM16.95 6.435a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Close mobile menu on click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if(targetElement) {
+                    // Adjust for header height if needed.
+                    const headerOffset = document.getElementById('header').offsetHeight;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
